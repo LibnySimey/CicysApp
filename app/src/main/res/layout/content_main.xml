@@ -13,11 +13,12 @@
         android:layout_height="wrap_content"
         android:text="aceptar"
 
-    />
+        tools:ignore="HardcodedText" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hola.."
+        android:text="Hola.. hola"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
