@@ -1,5 +1,6 @@
 package com.example.simey.cicysapp;
-
+import android.content.Intent;
+import android.view.View.OnClickListener;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,16 +9,19 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
-
+public class MainActivity extends AppCompatActivity implements OnClickListener{
+    Button btaceptar;
+    TextView textvi;
+    Button bt2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,6 +30,13 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        btaceptar = (Button) findViewById(R.id.boton);
+        textvi = (TextView) findViewById(R.id.text1);
+        bt2 = (Button) findViewById(R.id.boton2);
+
+        btaceptar.setOnClickListener(this);
+        textvi.setOnClickListener(this);
+        bt2.setOnClickListener(this);
     }
 
     @Override
@@ -48,5 +59,21 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.boton:
+                Intent intent = new Intent(v.getContext(), Main2Activity.class);
+                startActivityForResult(intent,0);
+                break;
+            case R.id.boton2:
+                textvi.setText("Hola");
+                break;
+
+
+        }
+
     }
 }
