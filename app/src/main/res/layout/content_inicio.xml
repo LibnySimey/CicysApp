@@ -26,7 +26,7 @@
         tools:ignore="MissingConstraints,RtlHardcoded" />
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton4"
+        android:id="@+id/bgalery"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:clickable="true"

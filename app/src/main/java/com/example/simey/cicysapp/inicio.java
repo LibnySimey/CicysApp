@@ -7,8 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-public class inicio extends AppCompatActivity {
-
+public class inicio extends AppCompatActivity implements View.OnClickListener{
+    FloatingActionButton galery;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +24,13 @@ public class inicio extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        galery = (FloatingActionButton) findViewById(R.id.bgalery);
+
+        galery.setOnClickListener(this);
     }
 
+    @Override
+    public void onClick(View v) {
+
+    }
 }
