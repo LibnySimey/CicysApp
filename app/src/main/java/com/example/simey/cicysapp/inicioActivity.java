@@ -6,15 +6,14 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Switch;
 
-public class LoginActivity extends AppCompatActivity implements View.OnClickListener{
+public class inicioActivity extends AppCompatActivity implements View.OnClickListener{
     Button btuser;
     Button btvisit;
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login_screen);
+        setContentView(R.layout.inicio_screen);
         btuser = (Button) findViewById(R.id.btusuario);
         btvisit = (Button) findViewById(R.id.btinvitado);
 
@@ -25,7 +24,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View v) {
         Intent intent = new Intent(v.getContext(),registrarseActivity.class);
-        Intent intent1 = new Intent(v.getContext(),mientrasActivity.class);
+        Intent intent1 = new Intent(v.getContext(),login1Activity.class);
         switch (v.getId()){
             case R.id.btusuario:
                 startActivityForResult(intent,0);
