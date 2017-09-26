@@ -24,7 +24,7 @@ public class inicioActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onClick(View v) {
         Intent intent = new Intent(v.getContext(),registrarseActivity.class);
-        Intent intent1 = new Intent(v.getContext(),login1Activity.class);
+        Intent intent1 = new Intent(v.getContext(),loginActivity.class);
         switch (v.getId()){
             case R.id.btusuario:
                 startActivityForResult(intent,0);
