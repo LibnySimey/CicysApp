@@ -1,3 +1,12 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_size">15sp</dimen>
+    <dimen name="small_boton">50dp</dimen>
+    <dimen name="medium_boton">100dp</dimen>
+    <dimen name="large_boton">150dp</dimen>
+    <dimen name="margin_left">0dp</dimen>
+    <dimen name="margin_right">0dp</dimen>
+    <dimen name="margin_top">30dp</dimen>
+    <dimen name="margin_down">30dp</dimen>
+
 </resources>

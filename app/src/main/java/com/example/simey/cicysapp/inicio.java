@@ -24,9 +24,7 @@ public class inicio extends AppCompatActivity implements View.OnClickListener{
                         .setAction("Action", null).show();
             }
         });
-        galery = (FloatingActionButton) findViewById(R.id.bgalery);
 
-        galery.setOnClickListener(this);
     }
 
     @Override

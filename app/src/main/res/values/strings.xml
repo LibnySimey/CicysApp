@@ -1,9 +1,15 @@
 <resources>
     <string name="app_name">CicysApp</string>
     <string name="action_settings">Settings</string>
-    <string name="Hola..">Hola Gerardo</string>
     <string name="title_activity_main2">Main2Activity</string>
-    <string name="button">Button</string>
+    <string name="text_View">REGISTRARSE</string>
+    <string name="cancelar">CANCELAR</string>
+    <string name="aceptar">ACEPTAR</string>
+    <string name="telefono">Teléfono</string>
+    <string name="emal">E-mail</string>
+    <string name="pass">Contraseña</string>
+    <string name="user">Usuario</string>
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
